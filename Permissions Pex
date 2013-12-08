@@ -14,6 +14,14 @@ groups:
     - essentials.tpa
     - essentials.tpaccept
     - essentials.tpadeny
+    - essentials.msg
+    - factions.create
+    - factions.invite
+    - factions.claim
+    - factions.map
+    - factions.leave
+    - factions.disband
+    - factions.list
     prefix: '&7[&8Peasent&7]&8'
     options:
       build: true
@@ -138,10 +146,26 @@ groups:
     - permissions.manage.users.permissions.timed
     inheritance:
     - moderator
-    prefix: '&n&8*&9C&8a&9p&8t&9a&8i&9n'
+    prefix: '&n&8*&9C&8a&9p&8t&9a&8i&9n&8*
     options:
       build: true
       rank: '100'
+  HeadAdmin:
+    permissions:
+    - -essentials.backup
+    - -essentials.essentials
+    - -essentials.setspawn
+    - -essentials.reloadall
+    - essentials.*
+    - permissions.manage.users
+    - permissions.manage.users.permissions
+    - permissions.manage.users.permissions.timed
+    inheritance:
+    - moderator
+    prefix: '*&n&8*&6G&8e&6n&8e&6r&8a&6l&8*'
+    options:
+      build: true
+      rank: '75'
   Owner:
     permissions:
     - '*'
